@@ -1,0 +1,131 @@
+[13-Apr-2025 03:15:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=do...', 'root', '', Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93): Pixie\ConnectionAdapters\BaseAdapter->connect(Array)
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(51): Pixie\Connection->connect()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(176): Pixie\Connection->__construct('mysql', Array, 'DB')
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(535): App->db()
+#9 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#10 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[13-Apr-2025 03:26:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 03:27:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'do_an.np_plugins' doesn't exist in engine in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155

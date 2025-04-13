@@ -1,0 +1,151 @@
+[11-Apr-2025 15:21:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'doantotnghiep' in D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=do...', 'root', '', Array)
+#1 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93): Pixie\ConnectionAdapters\BaseAdapter->connect(Array)
+#6 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(51): Pixie\Connection->connect()
+#7 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(176): Pixie\Connection->__construct('mysql', Array, 'DB')
+#8 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(577): App->db()
+#9 D:\doan\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#10 {main}
+  thrown in D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[11-Apr-2025 15:21:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'doantotnghiep' in D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=do...', 'root', '', Array)
+#1 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93): Pixie\ConnectionAdapters\BaseAdapter->connect(Array)
+#6 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(51): Pixie\Connection->connect()
+#7 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(176): Pixie\Connection->__construct('mysql', Array, 'DB')
+#8 D:\doan\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(577): App->db()
+#9 D:\doan\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#10 {main}
+  thrown in D:\doan\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[12-Apr-2025 09:33:11 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php:1100
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(1100): min(Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(875): AppointmentsController->getTheLaziestDoctor(6)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(26): AppointmentsController->newFlow()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): AppointmentsController->process()
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#5 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php on line 1100
+[12-Apr-2025 18:15:00 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php:1100
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(1100): min(Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(875): AppointmentsController->getTheLaziestDoctor(6)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(26): AppointmentsController->newFlow()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): AppointmentsController->process()
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#5 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php on line 1100
+[12-Apr-2025 18:47:17 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php:1100
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(1100): min(Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(875): AppointmentsController->getTheLaziestDoctor(8)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(26): AppointmentsController->newFlow()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): AppointmentsController->process()
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#5 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php on line 1100
+[12-Apr-2025 19:26:14 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php:1100
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(1100): min(Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(875): AppointmentsController->getTheLaziestDoctor(1)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(26): AppointmentsController->newFlow()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): AppointmentsController->process()
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#5 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php on line 1100
+[12-Apr-2025 19:26:51 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught ValueError: min(): Argument #1 ($value) must contain at least one element in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php:1100
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(1100): min(Array)
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(875): AppointmentsController->getTheLaziestDoctor(1)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php(26): AppointmentsController->newFlow()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): AppointmentsController->process()
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#5 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\AppointmentsController.php on line 1100
+[13-Apr-2025 04:57:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 04:58:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 04:58:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 04:58:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 04:58:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[13-Apr-2025 05:04:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
