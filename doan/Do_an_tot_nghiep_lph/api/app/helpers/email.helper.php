@@ -11,7 +11,7 @@
 
         public function __construct()
         {
-            // parent::__construct();
+            //parent::__construct();
             $this->setup();
         }
 
@@ -35,7 +35,7 @@
             //Username to use for SMTP authentication
             $mail->Username = 'phihasky@gmail.com';
             //Password to use for SMTP authentication
-            $mail->Password = 'pmyicteoyfutbgzz';
+            $mail->Password = 'rrkatiwricfgyswe';
             //Set who the message is to be sent from
             $mail->setFrom('phihasky@gmail.com', TITLE);
             //Set an alternative reply-to address
@@ -55,18 +55,18 @@
         }
 
         /**
-         * @author Lephiha
+    
          * set up HTML body
          * TITLE is a constant in app/config/config.php at line 42
          * APPURL is a constant in index.php at line 52
          */
         private static function setupHTMLBody()
         {
-            $logo = "http://192.168.56.1:8080/Do_an_tot_nghiep_lph/website_datn/doan/Do_an_tot_nghiep_lph/api/assets/uploads/logo2.png";
+            $logo = "https://rubee.com.vn/wp-content/uploads/2022/09/logo-bo-y-te.png";
             $html = file_get_contents(APPPATH."/inc/email-template.inc.php");
 
 
-            $html = str_replace("{{site_name}}","<img src='".$logo."' width='550px' alt='LeeHa Medical'>", $html);
+            $html = str_replace("{{site_name}}","<img src='".$logo."' width='550px' alt='LeeHaMedical Corporation'>", $html);
             $html = str_replace("{{appurl}}",VIDEO, $html);
             $html = str_replace("{{title}}",TITLE, $html);
             $html = str_replace("{{copyright}}",COPYRIGHT, $html);
@@ -76,7 +76,6 @@
         }
 
         /**
-         * @author Lephiha
          * send email with new registration
          */
         public static function signup($data = [])
@@ -91,14 +90,14 @@
             /**Step 2 - setup Mail & HTML Body */
             $mail = self::setupMail();
             $mail->addAddress($email, $name);
-            $mail->Subject = "Chào mừng đến với LeeHa Medical";
+            $mail->Subject = "Chào mừng đến với LeeHaMedical Corporation";
             $htmlBody = self::setupHTMLBody();
 
 
             /**Step 3 - prepare content */
             $app_url = str_replace("/api", "", APPURL);
             $body = "<p>Xin chào, <strong>".htmlspecialchars($name)."</strong> </p>"
-                . "Chào mừng bạn đã đăng kí trở thành thành viên của LeeHa Medical"
+                . "Chào mừng bạn đã đăng kí trở thành thành viên của LeeHaMedical Corporation"
                 . "<p>Thông tin đăng kí tài khoản của bạn tại <a href='".$app_url."'>".htmlspecialchars(TITLE)."</a> như sau:</p>"
                 . "<div style='margin-top: 30px; font-size: 14px; color: #9b9b9b'>"
                 . "<div><strong>Name:</strong> ".htmlspecialchars($name)."</div>"
@@ -131,7 +130,6 @@
         }
 
         /**
-         * @author Lephiha
          * send email to recovery password
          */
         public static function recoveryPassword($data = [])
@@ -150,7 +148,7 @@
             /**Step 3 - setup email & html content */
             $mail = self::setupMail();
             $mail->addAddress($email, $name);
-            $mail->Subject = "Khôi phục mật khẩu tài khoản tại LeeHa Medical";
+            $mail->Subject = "Khôi phục mật khẩu tài khoản tại LeeHaMedical Corporation";
             $htmlBody = self::setupHTMLBody();
 
             $body = "<p>Chào <strong>".htmlspecialchars($name)."</strong>, </p>"

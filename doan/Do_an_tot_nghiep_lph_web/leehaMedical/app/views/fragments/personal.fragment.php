@@ -35,7 +35,7 @@
                                         <div class="col-md-4">
                                             <div class="mb-3">
                                                 <label class="form-label" for="name">Tên</label>
-                                                <p id="name"><strong>Nguyễn Thành Phong</strong></p>
+                                                <p id="name"><strong>Lê Phi Hà</strong></p>
                                             </div>
                                         </div>
                                         <div class="col-md-4"><!-- SPECIALITY -->
@@ -57,7 +57,7 @@
                                     <div class="col-md-4"><!-- PHONE -->
                                         <div class="mb-3">
                                             <label class="form-label" for="phone">Số điện thoại</label>
-                                            <p id="name"><strong>0366253623</strong></p>
+                                            <p id="name"><strong>0392405600</strong></p>
                                         </div>
                                     </div><!-- end PHONE -->
                                     <div class="col-md-4"><!-- PRICE -->

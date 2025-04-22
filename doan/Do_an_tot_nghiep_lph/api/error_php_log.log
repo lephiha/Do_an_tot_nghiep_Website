@@ -149,3 +149,16 @@ Stack trace:
 #8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
 #9 {main}
   thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[17-Apr-2025 17:16:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(329): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `tn...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(360): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\models\RoomModel.php(94): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\DataEntry.php(179): RoomModel->insert()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(197): DataEntry->save()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\controllers\RoomsController.php(28): RoomsController->save()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\core\App.php(613): RoomsController->process()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\index.php(81): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph\api\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
