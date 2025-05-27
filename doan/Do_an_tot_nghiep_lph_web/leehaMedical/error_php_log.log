@@ -129,3 +129,20 @@ Stack trace:
 #8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
 #9 {main}
   thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155
+[24-Apr-2025 13:53:32 UTC] PHP Warning:  Undefined variable $serviceId in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\views\appointment.php on line 167
+[24-Apr-2025 13:53:32 UTC] PHP Warning:  Undefined variable $doctorId in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\views\appointment.php on line 168
+[25-Apr-2025 01:40:49 UTC] PHP Warning:  Undefined variable $serviceId in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\views\appointment.php on line 167
+[25-Apr-2025 01:40:49 UTC] PHP Warning:  Undefined variable $doctorId in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\views\appointment.php on line 168
+[16-May-2025 02:32:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(155): PDOStatement->execute()
+#1 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(177): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(256): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(239): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\DataList.php(229): DataList->paginate()
+#6 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(269): DataList->fetchData()
+#7 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\core\App.php(550): App->loadPlugins()
+#8 C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\index.php(102): App->process()
+#9 {main}
+  thrown in C:\xampp\htdocs\Do_an_tot_nghiep_lph\website_datn\doan\Do_an_tot_nghiep_lph_web\leehaMedical\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 155

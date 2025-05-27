@@ -124,7 +124,7 @@ class RoomsController extends Controller
             foreach($result as $element)
             {
                 $data[] = array(
-                    "id" => (int)$element->id,
+                    "id" => (int)$element->Id,
                     "name" => $element->name,
                     "location" => $element->location,
                     "doctor_quantity" => (int)$element->doctor_quantity

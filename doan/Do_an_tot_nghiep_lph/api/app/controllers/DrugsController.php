@@ -62,7 +62,7 @@
             /**Step 2 - get filters */
             $order          = Input::get("order");
             $search         = Input::get("search");
-            $length         = Input::get("length") ? (int)Input::get("length") : 10;
+            $length         = Input::get("length") ? (int)Input::get("length") : 100;
             $start          = Input::get("start") ? (int)Input::get("start") : 0;
 
             try
